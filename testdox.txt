@@ -1,0 +1,77 @@
+About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRoute)
+ [x] Route about as guest and succeed
+ [x] Route json about as guest and succeed
+ [x] Route about as client and succeed
+ [x] Route json about as manager and succeed
+
+Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)
+ [x] Route bootstrap as guest and succeed
+ [x] Route json bootstrap as guest and succeed
+ [x] Route bootstrap as vendor and succeed
+ [x] Route json bootstrap as wheel and succeed
+
+Command (Tests\Feature\Playground\Site\Blade\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)
+ [x] Route dashboard as guest and fail when disabled for guest and no redirect
+ [x] Route dashboard as guest and redirect when disabled for all
+ [x] Route dashboard as guest and redirect when disabled for guest
+ [x] Route json dashboard as guest and succeed
+
+Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRoute)
+ [x] Route home as guest and succeed
+ [x] Route json home as guest and succeed
+ [x] Route home as user admin and succeed
+ [x] Route json home as admin and succeed
+
+Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRoute)
+ [x] Route sitemap as guest and fail when disabled for guest and no redirect
+ [x] Route sitemap as guest and redirect when disabled for all
+ [x] Route sitemap as guest and redirect when disabled for guest
+ [x] Route json sitemap as guest and succeed
+ [x] Route sitemap as user and succeed
+ [x] Route sitemap as support and fail when disabled for all
+ [x] Route sitemap as user and fail when disabled for all and no redirect
+ [x] Route json sitemap as admin and succeed
+ [x] Route sitemap as user and succeed with package sitemaps
+
+Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)
+ [x] Route theme as guest and succeed
+ [x] Route theme as guest with preview and succeed
+ [x] Route theme as partner and succeed
+ [x] Route theme as sales and succeed with theme and redirect
+
+User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)
+ [x] Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware
+ [x] Route dashboard as guest and redirect
+ [x] Route dashboard as guest and redirect when disabled for guest
+ [x] Route json dashboard as guest and fail
+ [x] Route dashboard as user and succeed
+ [x] Route dashboard as user and fail when disabled for all
+ [x] Route dashboard as user and fail when disabled for all and no redirect
+ [x] Route json dashboard as admin and succeed
+
+User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRoute)
+ [x] Route home as guest and fail
+ [x] Route json home as guest and fail
+ [x] Route home as user admin and succeed
+ [x] Route json home as admin and succeed
+
+User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRoute)
+ [x] Route sitemap as guest and fail when disabled for guest and no redirect
+ [x] Route sitemap as guest and redirect when disabled for all
+ [x] Route sitemap as guest and redirect when disabled for guest
+ [x] Route json sitemap as guest and fail
+ [x] Route sitemap as user and succeed
+ [x] Route sitemap as support and fail when disabled for all
+ [x] Route sitemap as user and fail when disabled for all and no redirect
+ [x] Route json sitemap as admin and succeed
+ [x] Route sitemap as user and succeed with package sitemaps
+
+Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)
+ [x] Route welcome as guest and succeed
+ [x] Route json welcome as guest and succeed
+ [x] Route welcome as user and succeed
+ [x] Route json welcome as manager admin and succeed
+

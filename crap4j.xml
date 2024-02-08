@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2024-02-08 01:07:34</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>20</methodCount>
+    <crapMethodCount>1</crapMethodCount>
+    <crapLoad>8</crapLoad>
+    <totalCrap>161.78</totalCrap>
+    <crapMethodPercent>5</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\AboutController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\BootstrapController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): Illuminate\View\View</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\BootstrapController</className>
+      <methodName>theme</methodName>
+      <methodSignature>theme(Illuminate\Http\Request $request): \Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>theme(Illuminate\Http\Request $request): \Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\Controller</className>
+      <methodName>response_payload</methodName>
+      <methodSignature>response_payload(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>response_payload(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\Controller</className>
+      <methodName>getPackageViewPathFromConfig</methodName>
+      <methodSignature>getPackageViewPathFromConfig(mixed $config, string $controller, string $view): string</methodSignature>
+      <fullMethod>getPackageViewPathFromConfig(mixed $config, string $controller, string $view): string</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\Controller</className>
+      <methodName>init</methodName>
+      <methodSignature>init(Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>init(Illuminate\Http\Request $request): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\DashboardController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\DashboardController</className>
+      <methodName>init</methodName>
+      <methodSignature>init(Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>init(Illuminate\Http\Request $request): void</fullMethod>
+      <crap>5.01</crap>
+      <complexity>5</complexity>
+      <coverage>92.86</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\HomeController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\IndexController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\SitemapController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\SitemapController</className>
+      <methodName>init</methodName>
+      <methodSignature>init(Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>init(Illuminate\Http\Request $request): void</fullMethod>
+      <crap>6.14</crap>
+      <complexity>5</complexity>
+      <coverage>64.29</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\SitemapController</className>
+      <methodName>configs</methodName>
+      <methodSignature>configs(): void</methodSignature>
+      <fullMethod>configs(): void</fullMethod>
+      <crap>17.58</crap>
+      <complexity>7</complexity>
+      <coverage>40</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\SitemapController</className>
+      <methodName>sitemaps</methodName>
+      <methodSignature>sitemaps(): void</methodSignature>
+      <fullMethod>sitemaps(): void</fullMethod>
+      <crap>57.05</crap>
+      <complexity>10</complexity>
+      <coverage>22.22</coverage>
+      <crapLoad>8</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\WelcomeController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade</package>
+      <className>Playground\Site\Blade\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot(): void</methodSignature>
+      <fullMethod>boot(): void</fullMethod>
+      <crap>7</crap>
+      <complexity>7</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade</package>
+      <className>Playground\Site\Blade\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>23</crap>
+      <complexity>23</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade</package>
+      <className>Playground\Site\Blade\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade</package>
+      <className>Playground\Site\Blade\ServiceProvider</className>
+      <methodName>routes</methodName>
+      <methodSignature>routes(array $routes): void</methodSignature>
+      <fullMethod>routes(array $routes): void</fullMethod>
+      <crap>9</crap>
+      <complexity>9</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade</package>
+      <className>Playground\Site\Blade\ServiceProvider</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>
