@@ -68,11 +68,15 @@ class SitemapController extends Controller
         //     '__METHOD__' => __METHOD__,
         //     '__FILE__' => __FILE__,
         //     '__LINE__' => __LINE__,
-        //     '$configs' => $configs,
-        //     '$sitemaps' => $sitemaps,
+        //     '$this->configs' => $this->configs,
+        //     '$this->sitemaps' => $this->sitemaps,
         // ]);
 
-        return view($this->viewBase, [
+        return view($this->getPackageViewPathFromConfig(
+            $this->package_config_site_blade,
+            'sitemap',
+            'index'
+        ), [
             'package_config_site_blade' => $this->package_config_site_blade,
             'configs' => $this->configs,
             'sitemaps' => $this->sitemaps,
@@ -107,11 +111,19 @@ class SitemapController extends Controller
 
     protected function configs(): void
     {
+        /**
+         * @var array<string, mixed>
+         */
+        $packages = config('playground.packages');
+
         $this->configs = [];
-        if (! empty($this->package_config['packages']) && is_array($this->package_config['packages'])) {
-            foreach ($this->package_config['packages'] as $package) {
+        if (! empty($packages) && is_array($packages)) {
+            foreach ($packages as $package) {
                 if (is_string($package) && ! empty($package) && ! array_key_exists($package, $this->configs)) {
-                    $this->configs[$package] = config($package);
+                    $package_config = config($package);
+                    if (! empty($package_config) && is_array($package_config)) {
+                        $this->configs[$package] = $package_config;
+                    }
                 }
             }
         }

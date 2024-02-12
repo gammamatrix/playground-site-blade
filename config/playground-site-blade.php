@@ -24,9 +24,9 @@ return [
         'welcome' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_WELCOME', true),
     ],
     'dashboard' => [
-        'enable' => (bool) env('PLAYGROUND_SITE_BLADE_DASHBOARD_ENABLE', false),
-        'guest' => (bool) env('PLAYGROUND_SITE_BLADE_DASHBOARD_GUEST', false),
-        'user' => (bool) env('PLAYGROUND_SITE_BLADE_DASHBOARD_USER', false),
+        'enable' => (bool) env('PLAYGROUND_SITE_BLADE_DASHBOARD_ENABLE', true),
+        'guest' => (bool) env('PLAYGROUND_SITE_BLADE_DASHBOARD_GUEST', true),
+        'user' => (bool) env('PLAYGROUND_SITE_BLADE_DASHBOARD_USER', true),
         // 'view' => env('PLAYGROUND_SITE_BLADE_DASHBOARD_VIEW', 'playground-site::dashboard.index'),
         'view' => env('PLAYGROUND_SITE_BLADE_DASHBOARD_VIEW', ''),
     ],
