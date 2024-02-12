@@ -29,10 +29,8 @@ class WelcomeController extends Controller
             return response()->json($payload);
         }
 
-        $package_config_site_blade = config('playground-site-blade');
-
         return view($this->getPackageViewPathFromConfig(
-            $package_config_site_blade,
+            $this->package_config_site_blade,
             'welcome',
             'index'
         ), [
