@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-02-08 01:07:34</timestamp>
+  <timestamp>2024-02-12 08:11:13</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>20</methodCount>
-    <crapMethodCount>1</crapMethodCount>
-    <crapLoad>8</crapLoad>
-    <totalCrap>161.78</totalCrap>
-    <crapMethodPercent>5</crapMethodPercent>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>106.29</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -149,9 +149,9 @@
       <methodName>configs</methodName>
       <methodSignature>configs(): void</methodSignature>
       <fullMethod>configs(): void</fullMethod>
-      <crap>17.58</crap>
-      <complexity>7</complexity>
-      <coverage>40</coverage>
+      <crap>9</crap>
+      <complexity>9</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -160,10 +160,10 @@
       <methodName>sitemaps</methodName>
       <methodSignature>sitemaps(): void</methodSignature>
       <fullMethod>sitemaps(): void</fullMethod>
-      <crap>57.05</crap>
+      <crap>10.14</crap>
       <complexity>10</complexity>
-      <coverage>22.22</coverage>
-      <crapLoad>8</crapLoad>
+      <coverage>88.89</coverage>
+      <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Site\Blade\Http\Controllers</package>
