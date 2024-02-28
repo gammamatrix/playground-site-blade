@@ -7,6 +7,7 @@ namespace Playground\Site\Blade\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Playground\Blade\Facades\Ui;
 
 /**
  * \Playground\Http\Controllers\BootstrapController
@@ -41,7 +42,13 @@ class BootstrapController extends Controller
         $this->init($request);
 
         $appTheme = $request->input('appTheme');
+        $appTheme = is_string($appTheme) ? $appTheme : '';
+
+        $save = ! $request->has('preview');
+
         $_return_url = $request->input('_return_url');
+
+        Ui::setTheme($appTheme, $save);
 
         if ($request->has('preview')) {
             return view($this->getPackageViewPathFromConfig(
@@ -52,10 +59,6 @@ class BootstrapController extends Controller
                 'package_config_site_blade' => $this->package_config_site_blade,
             ]);
         }
-
-        session([
-            'appTheme' => is_string($appTheme) ? $appTheme : '',
-        ]);
 
         $_return_url = empty($_return_url) || ! is_string($_return_url) ? '/' : $_return_url;
 
