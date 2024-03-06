@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div class="container mb-5">
     <h2>{{ __('Cards') }}</h2>
     <div class="row">
         <div class="col">

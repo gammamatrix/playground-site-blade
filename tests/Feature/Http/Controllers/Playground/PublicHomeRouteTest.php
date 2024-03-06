@@ -2,17 +2,21 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground;
 
-use Playground\Test\Models\User;
-use Playground\Test\Models\UserWithRole;
+use Playground\Test\Models\AppPlaygroundUser as User;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
- * \Tests\Feature\Playground\Http\Controllers\Index\PublicHomeRouteTest
+ * \Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest
  */
 class PublicHomeRouteTest extends TestCase
 {
+    use TestTrait;
+
+    protected bool $load_migrations_playground = true;
+
     /**
      * Set up the environment.
      *
@@ -25,36 +29,34 @@ class PublicHomeRouteTest extends TestCase
         $app['config']->set('playground-site-blade.middleware.home', 'web');
     }
 
-    public function test_route_home_as_guest_and_succeed(): void
+    public function test_as_guest_and_succeed(): void
     {
         $response = $this->get(route('home'));
         $response->assertStatus(200);
     }
 
-    public function test_route_json_home_as_guest_and_succeed(): void
+    public function test_json_as_guest_and_succeed(): void
     {
         $response = $this->json('GET', route('home'));
         $response->assertStatus(200);
     }
 
-    public function test_route_home_as_user_admin_and_succeed(): void
+    public function test_as_admin_and_succeed(): void
     {
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
-        $user->setAttribute('role', 'user-admin');
+        $user = User::factory()->admin()->create();
         $response = $this->actingAs($user)->get(route('home'));
         $response->assertStatus(200);
     }
 
-    public function test_route_json_home_as_admin_and_succeed(): void
+    public function test_json_as_admin_and_succeed(): void
     {
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
-        $user->setAttribute('role', 'root');
+        $user = User::factory()->admin()->create();
         $response = $this->actingAs($user)->getJson(route('home'));
         $response->assertStatus(200);
     }

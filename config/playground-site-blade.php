@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'layout' => env('PLAYGROUND_SITE_BLADE_LAYOUT', env('PLAYGROUND_BLADE_LAYOUT', 'playground::layouts.site')),
     'load' => [

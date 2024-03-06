@@ -18,11 +18,20 @@
 @endsection
 
 @section('content')
+<div class="container">
 
     <h1>{{ __('Components') }}</h1>
+
+    @include(sprintf('%1$sbootstrap/index-headings', $package_config_site_blade['view']))
+
+    @include(sprintf('%1$sbootstrap/index-content', $package_config_site_blade['view']))
 
     @include(sprintf('%1$sbootstrap/index-buttons', $package_config_site_blade['view']))
 
     @include(sprintf('%1$sbootstrap/index-cards', $package_config_site_blade['view']))
 
+    @include(sprintf('%1$sbootstrap/index-pre', $package_config_site_blade['view']))
+
+    @include(sprintf('%1$sbootstrap/index-form', $package_config_site_blade['view']))
+</div>
 @endsection

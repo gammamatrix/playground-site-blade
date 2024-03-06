@@ -25,4 +25,16 @@ class CommandTest extends TestCase
         $result->assertExitCode(0);
         $result->expectsOutputToContain('Playground: Site Blade');
     }
+
+    // public function test_dump_console_about(): void
+    // {
+    //     $result = $this->withoutMockingConsoleOutput()->artisan('about');
+    //     dump(\Illuminate\Support\Facades\Artisan::output());
+    // }
+
+    // public function test_dump_console_route_list(): void
+    // {
+    //     $result = $this->withoutMockingConsoleOutput()->artisan('route:list -vvv');
+    //     dump(\Illuminate\Support\Facades\Artisan::output());
+    // }
 }

@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Playground
  */
@@ -11,7 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 /**
- * \Playground\Http\Controllers\HomeController
+ * \Playground\Site\Blade\Http\Controllers\HomeController
  */
 class HomeController extends Controller
 {

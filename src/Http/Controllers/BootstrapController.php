@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Playground
  */
@@ -10,7 +12,7 @@ use Illuminate\View\View;
 use Playground\Blade\Facades\Ui;
 
 /**
- * \Playground\Http\Controllers\BootstrapController
+ * \Playground\Site\Blade\Http\Controllers\BootstrapController
  */
 class BootstrapController extends Controller
 {

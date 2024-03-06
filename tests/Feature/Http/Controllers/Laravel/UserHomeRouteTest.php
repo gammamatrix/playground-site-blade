@@ -2,10 +2,10 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel;
 
 use Playground\Test\Models\User;
-use Playground\Test\Models\UserWithRole;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
@@ -13,6 +13,10 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class UserHomeRouteTest extends TestCase
 {
+    use TestTrait;
+
+    protected bool $load_migrations_laravel = true;
+
     public function test_route_home_as_guest_and_fail(): void
     {
         $response = $this->get(route('home'));
@@ -34,10 +38,9 @@ class UserHomeRouteTest extends TestCase
     public function test_route_home_as_user_admin_and_succeed(): void
     {
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
-        $user->setAttribute('role', 'user-admin');
+        $user = User::factory()->admin()->create();
         $response = $this->actingAs($user)->get(route('home'));
         $response->assertStatus(200);
     }
@@ -45,10 +48,9 @@ class UserHomeRouteTest extends TestCase
     public function test_route_json_home_as_admin_and_succeed(): void
     {
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
-        $user->setAttribute('role', 'root');
+        $user = User::factory()->admin()->create();
         $response = $this->actingAs($user)->getJson(route('home'));
         $response->assertStatus(200);
     }

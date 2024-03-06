@@ -27,7 +27,7 @@
 @push('body')
 
 <script type="application/javascript">
-console.log('home.blade', {
+console.log('index.blade', {
     window: window,
 });
 

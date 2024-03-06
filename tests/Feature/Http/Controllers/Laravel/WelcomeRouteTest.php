@@ -2,10 +2,10 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel;
 
 use Playground\Test\Models\User;
-use Playground\Test\Models\UserWithRole;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
@@ -13,19 +13,23 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class WelcomeRouteTest extends TestCase
 {
-    public function test_route_welcome_as_guest_and_succeed(): void
+    use TestTrait;
+
+    protected bool $load_migrations_laravel = true;
+
+    public function test_as_guest_and_succeed(): void
     {
         $response = $this->get(route('welcome'));
         $response->assertStatus(200);
     }
 
-    public function test_route_json_welcome_as_guest_and_succeed(): void
+    public function test_json_as_guest_and_succeed(): void
     {
         $response = $this->json('GET', route('welcome'));
         $response->assertStatus(200);
     }
 
-    public function test_route_welcome_as_user_and_succeed(): void
+    public function test_as_user_and_succeed(): void
     {
         /**
          * @var User $user
@@ -35,13 +39,12 @@ class WelcomeRouteTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_route_json_welcome_as_manager_admin_and_succeed(): void
+    public function test_json_as_manager_admin_and_succeed(): void
     {
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
-        $user->setAttribute('role', 'manager-admin');
+        $user = User::factory()->admin()->create();
         $response = $this->actingAs($user)->getJson(route('welcome'));
         $response->assertStatus(200);
     }
