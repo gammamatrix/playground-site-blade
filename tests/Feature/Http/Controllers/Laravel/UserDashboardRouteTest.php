@@ -2,10 +2,10 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel;
 
 use Playground\Test\Models\User;
-use Playground\Test\Models\UserWithRole;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
@@ -13,7 +13,11 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class UserDashboardRouteTest extends TestCase
 {
-    public function test_route_dashboard_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware(): void
+    use TestTrait;
+
+    protected bool $load_migrations_laravel = true;
+
+    public function test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
@@ -26,7 +30,7 @@ class UserDashboardRouteTest extends TestCase
         $response->assertRedirect('/login');
     }
 
-    public function test_route_dashboard_as_guest_and_redirect(): void
+    public function test_as_guest_and_redirect(): void
     {
         $response = $this->get(route('dashboard'));
         // Redirected by middleware
@@ -34,7 +38,7 @@ class UserDashboardRouteTest extends TestCase
         $response->assertRedirect('/login');
     }
 
-    public function test_route_dashboard_as_guest_and_redirect_when_disabled_for_guest(): void
+    public function test_as_guest_and_redirect_when_disabled_for_guest(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
@@ -46,7 +50,7 @@ class UserDashboardRouteTest extends TestCase
         $response->assertRedirect('/login');
     }
 
-    public function test_route_json_dashboard_as_guest_and_fail(): void
+    public function test_as_guest_and_fail(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
@@ -59,7 +63,7 @@ class UserDashboardRouteTest extends TestCase
         $response->assertStatus(401);
     }
 
-    public function test_route_dashboard_as_user_and_succeed(): void
+    public function test_as_user_and_succeed(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
@@ -73,7 +77,7 @@ class UserDashboardRouteTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_route_dashboard_as_user_and_fail_when_disabled_for_all(): void
+    public function test_as_user_and_fail_when_disabled_for_all(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => false,
@@ -86,7 +90,7 @@ class UserDashboardRouteTest extends TestCase
         $response->assertRedirect('/');
     }
 
-    public function test_route_dashboard_as_user_and_fail_when_disabled_for_all_and_no_redirect(): void
+    public function test_as_user_and_fail_when_disabled_for_all_and_no_redirect(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => false,
@@ -99,15 +103,15 @@ class UserDashboardRouteTest extends TestCase
         $response->assertStatus(404);
     }
 
-    public function test_route_json_dashboard_as_admin_and_succeed(): void
+    public function test_json_as_admin_and_succeed(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
         ]);
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
+        $user = User::factory()->admin()->create();
         $user->setAttribute('role', 'admin');
         $response = $this->actingAs($user)->getJson(route('dashboard'));
         $response->assertStatus(200);

@@ -2,10 +2,10 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel;
 
 use Playground\Test\Models\User;
-use Playground\Test\Models\UserWithRole;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
@@ -13,6 +13,10 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class UserSitemapRouteTest extends TestCase
 {
+    use TestTrait;
+
+    protected bool $load_migrations_laravel = true;
+
     /**
      * Set up the environment.
      *
@@ -112,7 +116,7 @@ class UserSitemapRouteTest extends TestCase
         /**
          * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
+        $user = User::factory()->admin()->create();
         // The role is not saved since the column may not exist.
         $user->setAttribute('role', 'admin');
         $response = $this->actingAs($user)->getJson(route('sitemap'));

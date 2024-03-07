@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Playground
  */
@@ -10,7 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 /**
- * \Playground\Http\Controllers\IndexController
+ * \Playground\Site\Blade\Http\Controllers\IndexController
  */
 class WelcomeController extends Controller
 {

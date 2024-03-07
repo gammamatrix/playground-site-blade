@@ -2,6 +2,8 @@
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Playground\Site\Blade\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
@@ -9,7 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 /**
- * \Playground\Http\Controllers\AboutController
+ * \Playground\Site\Blade\Http\Controllers\AboutController
  */
 class AboutController extends Controller
 {

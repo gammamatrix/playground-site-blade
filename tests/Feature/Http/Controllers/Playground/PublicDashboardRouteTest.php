@@ -2,16 +2,21 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
 
-use Illuminate\Support\Facades\Artisan;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground;
+
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
- * \Tests\Feature\Playground\Http\Controllers\Index\PublicDashboardRouteTest
+ * \Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest
  */
 class PublicDashboardRouteTest extends TestCase
 {
+    use TestTrait;
+
+    protected bool $load_migrations_playground = true;
+
     /**
      * Set up the environment.
      *
@@ -24,23 +29,20 @@ class PublicDashboardRouteTest extends TestCase
         $app['config']->set('playground-site-blade.middleware.dashboard', 'web');
     }
 
-    public function test_route_dashboard_as_guest_and_fail_when_disabled_for_guest_and_no_redirect(): void
+    public function test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
             'playground-site-blade.dashboard.guest' => false,
         ]);
-        // dump(config('playground-site-blade'));
 
-        // $result = $this->withoutMockingConsoleOutput()->artisan('route:list -vvv');
-        // dd(Artisan::output());
         $response = $this->get('/dashboard?noredirect');
         // $response->dump();
-        // Redirected by controller
+
         $response->assertStatus(401);
     }
 
-    public function test_route_dashboard_as_guest_and_redirect_when_disabled_for_all(): void
+    public function test_as_guest_and_redirect_when_disabled_for_all(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => false,
@@ -49,7 +51,7 @@ class PublicDashboardRouteTest extends TestCase
         $response->assertRedirect('/');
     }
 
-    public function test_route_dashboard_as_guest_and_redirect_when_disabled_for_guest(): void
+    public function test_as_guest_and_redirect_when_disabled_for_guest(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,
@@ -59,7 +61,7 @@ class PublicDashboardRouteTest extends TestCase
         $response->assertRedirect('/');
     }
 
-    public function test_route_json_dashboard_as_guest_and_succeed(): void
+    public function test_as_guest_and_succeed(): void
     {
         config([
             'playground-site-blade.dashboard.enable' => true,

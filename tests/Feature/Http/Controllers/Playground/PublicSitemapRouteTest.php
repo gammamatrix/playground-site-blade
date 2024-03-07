@@ -2,10 +2,11 @@
 /**
  * Playground
  */
-namespace Tests\Feature\Playground\Site\Blade\Http\Controllers;
 
-use Playground\Test\Models\User;
-use Playground\Test\Models\UserWithRole;
+declare(strict_types=1);
+namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground;
+
+use Playground\Test\Models\AppPlaygroundUser as User;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
@@ -13,7 +14,11 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class PublicSitemapRouteTest extends TestCase
 {
-    public function test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect(): void
+    use TestTrait;
+
+    protected bool $load_migrations_playground = true;
+
+    public function test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => true,
@@ -23,7 +28,7 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertStatus(401);
     }
 
-    public function test_route_sitemap_as_guest_and_redirect_when_disabled_for_all(): void
+    public function test_as_guest_and_redirect_when_disabled_for_all(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => false,
@@ -32,7 +37,7 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertRedirect('/');
     }
 
-    public function test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest(): void
+    public function test_as_guest_and_redirect_when_disabled_for_guest(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => true,
@@ -42,7 +47,7 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertRedirect('/');
     }
 
-    public function test_route_json_sitemap_as_guest_and_succeed(): void
+    public function test_as_guest_and_succeed(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => true,
@@ -52,7 +57,7 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_route_sitemap_as_user_and_succeed(): void
+    public function test_as_user_and_succeed(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => true,
@@ -66,7 +71,7 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_route_sitemap_as_support_and_fail_when_disabled_for_all(): void
+    public function test_as_support_and_fail_when_disabled_for_all(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => false,
@@ -79,7 +84,7 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertRedirect('/');
     }
 
-    public function test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect(): void
+    public function test_as_user_and_fail_when_disabled_for_all_and_no_redirect(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => false,
@@ -92,22 +97,20 @@ class PublicSitemapRouteTest extends TestCase
         $response->assertStatus(404);
     }
 
-    public function test_route_json_sitemap_as_admin_and_succeed(): void
+    public function test_as_admin_and_succeed(): void
     {
         config([
             'playground-site-blade.sitemap.enable' => true,
         ]);
         /**
-         * @var UserWithRole $user
+         * @var User $user
          */
-        $user = UserWithRole::find(User::factory()->create()->getAttributeValue('id'));
-        // The role is not saved since the column may not exist.
-        $user->setAttribute('role', 'admin');
+        $user = User::factory()->admin()->create();
         $response = $this->actingAs($user)->getJson(route('sitemap'));
         $response->assertStatus(200);
     }
 
-    public function test_route_sitemap_as_user_and_succeed_with_package_sitemaps(): void
+    public function test_as_user_and_succeed_with_package_sitemaps(): void
     {
         config([
             'playground-site-blade.load.views' => true,
