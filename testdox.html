@@ -51,76 +51,147 @@
         </style>
     </head>
     <body>
-        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRoute)</h2>
+        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRoute)</h2>
         <ul>
-            <li class="success">Route about as guest and succeed</li>
-            <li class="success">Route json about as guest and succeed</li>
-            <li class="success">Route about as client and succeed</li>
-            <li class="success">Route json about as manager and succeed</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as user and succeed</li>
         </ul>
-        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)</h2>
+        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRoute)</h2>
         <ul>
-            <li class="success">Route bootstrap as guest and succeed</li>
-            <li class="success">Route json bootstrap as guest and succeed</li>
-            <li class="success">Route bootstrap as vendor and succeed</li>
-            <li class="success">Route json bootstrap as wheel and succeed</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as user and succeed</li>
+            <li class="success">As client and succeed</li>
+            <li class="success">Json as client and succeed</li>
+            <li class="success">As manager and succeed</li>
+            <li class="success">Json as manager and succeed</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">Json as admin and succeed</li>
+        </ul>
+        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As wheel and succeed</li>
+            <li class="success">Json as wheel and succeed</li>
+        </ul>
+        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As wheel and succeed</li>
+            <li class="success">Json as wheel and succeed</li>
         </ul>
         <h2>Command (Tests\Feature\Playground\Site\Blade\Console\Commands\About\Command)</h2>
         <ul>
             <li class="success">Command about displays package information and succeed with code 0</li>
         </ul>
-        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)</h2>
+        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRoute)</h2>
         <ul>
-            <li class="success">Route dashboard as guest and fail when disabled for guest and no redirect</li>
-            <li class="success">Route dashboard as guest and redirect when disabled for all</li>
-            <li class="success">Route dashboard as guest and redirect when disabled for guest</li>
-            <li class="success">Route json dashboard as guest and succeed</li>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
         </ul>
-        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRoute)</h2>
+        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRoute)</h2>
         <ul>
-            <li class="success">Route home as guest and succeed</li>
-            <li class="success">Route json home as guest and succeed</li>
-            <li class="success">Route home as user admin and succeed</li>
-            <li class="success">Route json home as admin and succeed</li>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
         </ul>
-        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRoute)</h2>
+        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRoute)</h2>
         <ul>
-            <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
-            <li class="success">Route sitemap as guest and redirect when disabled for all</li>
-            <li class="success">Route sitemap as guest and redirect when disabled for guest</li>
-            <li class="success">Route json sitemap as guest and succeed</li>
-            <li class="success">Route sitemap as user and succeed</li>
-            <li class="success">Route sitemap as support and fail when disabled for all</li>
-            <li class="success">Route sitemap as user and fail when disabled for all and no redirect</li>
-            <li class="success">Route json sitemap as admin and succeed</li>
-            <li class="success">Route sitemap as user and succeed with package sitemaps</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">Json as admin and succeed</li>
         </ul>
-        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)</h2>
+        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRoute)</h2>
         <ul>
-            <li class="success">Route theme as guest and succeed</li>
-            <li class="success">Route theme as guest with preview and succeed</li>
-            <li class="success">Route theme as partner and succeed</li>
-            <li class="success">Route theme as sales and succeed with theme and redirect</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">Json as admin and succeed</li>
         </ul>
-        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)</h2>
+        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRoute)</h2>
         <ul>
-            <li class="success">Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware</li>
-            <li class="success">Route dashboard as guest and redirect</li>
-            <li class="success">Route dashboard as guest and redirect when disabled for guest</li>
-            <li class="success">Route json dashboard as guest and fail</li>
-            <li class="success">Route dashboard as user and succeed</li>
-            <li class="success">Route dashboard as user and fail when disabled for all</li>
-            <li class="success">Route dashboard as user and fail when disabled for all and no redirect</li>
-            <li class="success">Route json dashboard as admin and succeed</li>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As support and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">As user and succeed with package sitemaps</li>
         </ul>
-        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRoute)</h2>
+        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As support and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">As user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As guest with preview and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As admin and succeed with theme and redirect</li>
+        </ul>
+        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As guest with preview and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As admin and succeed with theme and redirect</li>
+        </ul>
+        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect with auth middleware</li>
+            <li class="success">As guest and redirect</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and fail</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As user and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">Json as admin and succeed</li>
+        </ul>
+        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect with auth middleware</li>
+            <li class="success">As guest and redirect</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and fail</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As user and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">Json as admin and succeed</li>
+        </ul>
+        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRoute)</h2>
         <ul>
             <li class="success">Route home as guest and fail</li>
             <li class="success">Route json home as guest and fail</li>
             <li class="success">Route home as user admin and succeed</li>
             <li class="success">Route json home as admin and succeed</li>
         </ul>
-        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRoute)</h2>
+        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRoute)</h2>
+        <ul>
+            <li class="success">Route home as guest and fail</li>
+            <li class="success">Route json home as guest and fail</li>
+            <li class="success">Route home as user admin and succeed</li>
+            <li class="success">Route json home as admin and succeed</li>
+        </ul>
+        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRoute)</h2>
         <ul>
             <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
             <li class="success">Route sitemap as guest and redirect when disabled for all</li>
@@ -132,12 +203,31 @@
             <li class="success">Route json sitemap as admin and succeed</li>
             <li class="success">Route sitemap as user and succeed with package sitemaps</li>
         </ul>
-        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)</h2>
+        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRoute)</h2>
         <ul>
-            <li class="success">Route welcome as guest and succeed</li>
-            <li class="success">Route json welcome as guest and succeed</li>
-            <li class="success">Route welcome as user and succeed</li>
-            <li class="success">Route json welcome as manager admin and succeed</li>
+            <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for all</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for guest</li>
+            <li class="success">Route json sitemap as guest and fail</li>
+            <li class="success">Route sitemap as user and succeed</li>
+            <li class="success">Route sitemap as support and fail when disabled for all</li>
+            <li class="success">Route sitemap as user and fail when disabled for all and no redirect</li>
+            <li class="success">Route json sitemap as admin and succeed</li>
+            <li class="success">Route sitemap as user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as manager admin and succeed</li>
+        </ul>
+        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as manager admin and succeed</li>
         </ul>
     </body>
 </html>

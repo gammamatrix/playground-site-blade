@@ -1,64 +1,127 @@
-About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRoute)
- [x] Route about as guest and succeed
- [x] Route json about as guest and succeed
- [x] Route about as client and succeed
- [x] Route json about as manager and succeed
+About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As user and succeed
+ [x] Json as user and succeed
 
-Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)
- [x] Route bootstrap as guest and succeed
- [x] Route json bootstrap as guest and succeed
- [x] Route bootstrap as vendor and succeed
- [x] Route json bootstrap as wheel and succeed
+About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As user and succeed
+ [x] Json as user and succeed
+ [x] As client and succeed
+ [x] Json as client and succeed
+ [x] As manager and succeed
+ [x] Json as manager and succeed
+ [x] As admin and succeed
+ [x] Json as admin and succeed
+
+Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As wheel and succeed
+ [x] Json as wheel and succeed
+
+Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As wheel and succeed
+ [x] Json as wheel and succeed
 
 Command (Tests\Feature\Playground\Site\Blade\Console\Commands\About\Command)
  [x] Command about displays package information and succeed with code 0
 
-Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)
- [x] Route dashboard as guest and fail when disabled for guest and no redirect
- [x] Route dashboard as guest and redirect when disabled for all
- [x] Route dashboard as guest and redirect when disabled for guest
- [x] Route json dashboard as guest and succeed
+Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRoute)
+ [x] As guest and fail when disabled for guest and no redirect
+ [x] As guest and redirect when disabled for all
+ [x] As guest and redirect when disabled for guest
+ [x] As guest and succeed
 
-Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRoute)
- [x] Route home as guest and succeed
- [x] Route json home as guest and succeed
- [x] Route home as user admin and succeed
- [x] Route json home as admin and succeed
+Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRoute)
+ [x] As guest and fail when disabled for guest and no redirect
+ [x] As guest and redirect when disabled for all
+ [x] As guest and redirect when disabled for guest
+ [x] As guest and succeed
 
-Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRoute)
- [x] Route sitemap as guest and fail when disabled for guest and no redirect
- [x] Route sitemap as guest and redirect when disabled for all
- [x] Route sitemap as guest and redirect when disabled for guest
- [x] Route json sitemap as guest and succeed
- [x] Route sitemap as user and succeed
- [x] Route sitemap as support and fail when disabled for all
- [x] Route sitemap as user and fail when disabled for all and no redirect
- [x] Route json sitemap as admin and succeed
- [x] Route sitemap as user and succeed with package sitemaps
+Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As admin and succeed
+ [x] Json as admin and succeed
 
-Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)
- [x] Route theme as guest and succeed
- [x] Route theme as guest with preview and succeed
- [x] Route theme as partner and succeed
- [x] Route theme as sales and succeed with theme and redirect
+Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As admin and succeed
+ [x] Json as admin and succeed
 
-User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)
- [x] Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware
- [x] Route dashboard as guest and redirect
- [x] Route dashboard as guest and redirect when disabled for guest
- [x] Route json dashboard as guest and fail
- [x] Route dashboard as user and succeed
- [x] Route dashboard as user and fail when disabled for all
- [x] Route dashboard as user and fail when disabled for all and no redirect
- [x] Route json dashboard as admin and succeed
+Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRoute)
+ [x] As guest and fail when disabled for guest and no redirect
+ [x] As guest and redirect when disabled for all
+ [x] As guest and redirect when disabled for guest
+ [x] As guest and succeed
+ [x] As user and succeed
+ [x] As support and fail when disabled for all
+ [x] As user and fail when disabled for all and no redirect
+ [x] As admin and succeed
+ [x] As user and succeed with package sitemaps
 
-User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRoute)
+Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRoute)
+ [x] As guest and fail when disabled for guest and no redirect
+ [x] As guest and redirect when disabled for all
+ [x] As guest and redirect when disabled for guest
+ [x] As guest and succeed
+ [x] As user and succeed
+ [x] As support and fail when disabled for all
+ [x] As user and fail when disabled for all and no redirect
+ [x] As admin and succeed
+ [x] As user and succeed with package sitemaps
+
+Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRoute)
+ [x] As guest and succeed
+ [x] As guest with preview and succeed
+ [x] As user and succeed
+ [x] As admin and succeed with theme and redirect
+
+Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRoute)
+ [x] As guest and succeed
+ [x] As guest with preview and succeed
+ [x] As user and succeed
+ [x] As admin and succeed with theme and redirect
+
+User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRoute)
+ [x] As guest and fail when disabled for guest and no redirect with auth middleware
+ [x] As guest and redirect
+ [x] As guest and redirect when disabled for guest
+ [x] As guest and fail
+ [x] As user and succeed
+ [x] As user and fail when disabled for all
+ [x] As user and fail when disabled for all and no redirect
+ [x] Json as admin and succeed
+
+User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRoute)
+ [x] As guest and fail when disabled for guest and no redirect with auth middleware
+ [x] As guest and redirect
+ [x] As guest and redirect when disabled for guest
+ [x] As guest and fail
+ [x] As user and succeed
+ [x] As user and fail when disabled for all
+ [x] As user and fail when disabled for all and no redirect
+ [x] Json as admin and succeed
+
+User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRoute)
  [x] Route home as guest and fail
  [x] Route json home as guest and fail
  [x] Route home as user admin and succeed
  [x] Route json home as admin and succeed
 
-User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRoute)
+User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRoute)
+ [x] Route home as guest and fail
+ [x] Route json home as guest and fail
+ [x] Route home as user admin and succeed
+ [x] Route json home as admin and succeed
+
+User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRoute)
  [x] Route sitemap as guest and fail when disabled for guest and no redirect
  [x] Route sitemap as guest and redirect when disabled for all
  [x] Route sitemap as guest and redirect when disabled for guest
@@ -69,9 +132,26 @@ User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSit
  [x] Route json sitemap as admin and succeed
  [x] Route sitemap as user and succeed with package sitemaps
 
-Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)
- [x] Route welcome as guest and succeed
- [x] Route json welcome as guest and succeed
- [x] Route welcome as user and succeed
- [x] Route json welcome as manager admin and succeed
+User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRoute)
+ [x] Route sitemap as guest and fail when disabled for guest and no redirect
+ [x] Route sitemap as guest and redirect when disabled for all
+ [x] Route sitemap as guest and redirect when disabled for guest
+ [x] Route json sitemap as guest and fail
+ [x] Route sitemap as user and succeed
+ [x] Route sitemap as support and fail when disabled for all
+ [x] Route sitemap as user and fail when disabled for all and no redirect
+ [x] Route json sitemap as admin and succeed
+ [x] Route sitemap as user and succeed with package sitemaps
+
+Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As user and succeed
+ [x] Json as manager admin and succeed
+
+Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRoute)
+ [x] As guest and succeed
+ [x] Json as guest and succeed
+ [x] As user and succeed
+ [x] Json as manager admin and succeed
 
