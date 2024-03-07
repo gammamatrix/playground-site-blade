@@ -9,7 +9,7 @@
 
 ##teamcity[testStarted name='test_command_about_displays_package_information_and_succeed_with_code_0' locationHint='php_qn:///app/tests/Feature/Console/Commands/About/CommandTest.php::\Tests\Feature\Playground\Site\Blade\Console\Commands\About\CommandTest::test_command_about_displays_package_information_and_succeed_with_code_0' flowId='1']
 
-##teamcity[testFinished name='test_command_about_displays_package_information_and_succeed_with_code_0' duration='372' flowId='1']
+##teamcity[testFinished name='test_command_about_displays_package_information_and_succeed_with_code_0' duration='367' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Console\Commands\About\CommandTest' flowId='1']
 
@@ -17,15 +17,15 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='85' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='84' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_guest_and_succeed' duration='21' flowId='1']
+##teamcity[testFinished name='test_json_as_guest_and_succeed' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='41' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='40' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed' flowId='1']
 
@@ -49,7 +49,7 @@
 
 ##teamcity[testStarted name='test_json_as_wheel_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/BootstrapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_wheel_and_succeed' duration='30' flowId='1']
+##teamcity[testFinished name='test_json_as_wheel_and_succeed' duration='29' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest' flowId='1']
 
@@ -65,11 +65,11 @@
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest::test_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='20' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='19' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='21' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='19' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest' flowId='1']
 
@@ -77,7 +77,7 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='31' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='30' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_guest_and_succeed' flowId='1']
 
@@ -97,7 +97,7 @@
 
 ##teamcity[testStarted name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='39' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='37' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_redirect_when_disabled_for_all' flowId='1']
 
@@ -105,11 +105,11 @@
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='20' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='19' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='28' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='27' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed' flowId='1']
 
@@ -117,19 +117,19 @@
 
 ##teamcity[testStarted name='test_as_support_and_fail_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_support_and_fail_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_as_support_and_fail_when_disabled_for_all' duration='27' flowId='1']
+##teamcity[testFinished name='test_as_support_and_fail_when_disabled_for_all' duration='25' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='25' flowId='1']
+##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='24' flowId='1']
 
 ##teamcity[testStarted name='test_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_admin_and_succeed' duration='29' flowId='1']
+##teamcity[testFinished name='test_as_admin_and_succeed' duration='28' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed_with_package_sitemaps' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed_with_package_sitemaps' duration='29' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed_with_package_sitemaps' duration='28' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest' flowId='1']
 
@@ -145,7 +145,7 @@
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/ThemeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='23' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='22' flowId='1']
 
 ##teamcity[testStarted name='test_as_admin_and_succeed_with_theme_and_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/ThemeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_admin_and_succeed_with_theme_and_redirect' flowId='1']
 
@@ -157,15 +157,15 @@
 
 ##teamcity[testStarted name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' duration='21' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_guest_and_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect' duration='21' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='26' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='23' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_fail' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_guest_and_fail' flowId='1']
 
@@ -173,7 +173,7 @@
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='30' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='29' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_fail_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all' flowId='1']
 
@@ -181,7 +181,7 @@
 
 ##teamcity[testStarted name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='45' flowId='1']
+##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='24' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed' flowId='1']
 
@@ -193,7 +193,7 @@
 
 ##teamcity[testStarted name='test_route_home_as_guest_and_fail' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_guest_and_fail' flowId='1']
 
-##teamcity[testFinished name='test_route_home_as_guest_and_fail' duration='20' flowId='1']
+##teamcity[testFinished name='test_route_home_as_guest_and_fail' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_route_json_home_as_guest_and_fail' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_guest_and_fail' flowId='1']
 
@@ -205,7 +205,7 @@
 
 ##teamcity[testStarted name='test_route_json_home_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_route_json_home_as_admin_and_succeed' duration='23' flowId='1']
+##teamcity[testFinished name='test_route_json_home_as_admin_and_succeed' duration='22' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest' flowId='1']
 
@@ -213,19 +213,19 @@
 
 ##teamcity[testStarted name='test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='21' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' duration='19' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' duration='22' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest' duration='19' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_route_json_sitemap_as_guest_and_fail' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail' flowId='1']
 
-##teamcity[testFinished name='test_route_json_sitemap_as_guest_and_fail' duration='26' flowId='1']
+##teamcity[testFinished name='test_route_json_sitemap_as_guest_and_fail' duration='25' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed' flowId='1']
 
@@ -253,7 +253,7 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='31' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='32' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_guest_and_succeed' flowId='1']
 
@@ -261,11 +261,11 @@
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='23' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='27' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_manager_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Laravel/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_manager_admin_and_succeed' duration='22' flowId='1']
+##teamcity[testFinished name='test_json_as_manager_admin_and_succeed' duration='24' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest' flowId='1']
 
@@ -273,15 +273,15 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='27' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='26' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_guest_and_succeed' duration='20' flowId='1']
+##teamcity[testFinished name='test_json_as_guest_and_succeed' duration='24' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='47' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='46' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_user_and_succeed' flowId='1']
 
@@ -289,15 +289,15 @@
 
 ##teamcity[testStarted name='test_as_client_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_client_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_client_and_succeed' duration='33' flowId='1']
+##teamcity[testFinished name='test_as_client_and_succeed' duration='32' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_client_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_client_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_client_and_succeed' duration='28' flowId='1']
+##teamcity[testFinished name='test_json_as_client_and_succeed' duration='29' flowId='1']
 
 ##teamcity[testStarted name='test_as_manager_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_manager_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_manager_and_succeed' duration='35' flowId='1']
+##teamcity[testFinished name='test_as_manager_and_succeed' duration='34' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_manager_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_manager_and_succeed' flowId='1']
 
@@ -305,7 +305,7 @@
 
 ##teamcity[testStarted name='test_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_admin_and_succeed' duration='34' flowId='1']
+##teamcity[testFinished name='test_as_admin_and_succeed' duration='33' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/AboutRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_admin_and_succeed' flowId='1']
 
@@ -325,11 +325,11 @@
 
 ##teamcity[testStarted name='test_as_wheel_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/BootstrapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_wheel_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_wheel_and_succeed' duration='38' flowId='1']
+##teamcity[testFinished name='test_as_wheel_and_succeed' duration='35' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_wheel_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/BootstrapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_wheel_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_wheel_and_succeed' duration='36' flowId='1']
+##teamcity[testFinished name='test_json_as_wheel_and_succeed' duration='35' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest' flowId='1']
 
@@ -345,11 +345,11 @@
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest::test_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='20' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='20' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='21' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest' flowId='1']
 
@@ -357,7 +357,7 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='26' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='25' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_guest_and_succeed' flowId='1']
 
@@ -365,11 +365,11 @@
 
 ##teamcity[testStarted name='test_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_admin_and_succeed' duration='33' flowId='1']
+##teamcity[testFinished name='test_as_admin_and_succeed' duration='35' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_admin_and_succeed' duration='27' flowId='1']
+##teamcity[testFinished name='test_json_as_admin_and_succeed' duration='29' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest' flowId='1']
 
@@ -377,19 +377,19 @@
 
 ##teamcity[testStarted name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='22' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_redirect_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_all' duration='20' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_all' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='21' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_redirect_when_disabled_for_guest' duration='22' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='26' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='27' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed' flowId='1']
 
@@ -397,19 +397,19 @@
 
 ##teamcity[testStarted name='test_as_support_and_fail_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_support_and_fail_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_as_support_and_fail_when_disabled_for_all' duration='27' flowId='1']
+##teamcity[testFinished name='test_as_support_and_fail_when_disabled_for_all' duration='30' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='30' flowId='1']
+##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='29' flowId='1']
 
 ##teamcity[testStarted name='test_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_admin_and_succeed' duration='33' flowId='1']
+##teamcity[testFinished name='test_as_admin_and_succeed' duration='34' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed_with_package_sitemaps' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/PublicSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed_with_package_sitemaps' duration='32' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed_with_package_sitemaps' duration='34' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest' flowId='1']
 
@@ -417,19 +417,19 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/ThemeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='22' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_with_preview_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/ThemeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_guest_with_preview_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_with_preview_and_succeed' duration='26' flowId='1']
+##teamcity[testFinished name='test_as_guest_with_preview_and_succeed' duration='27' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/ThemeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='27' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='28' flowId='1']
 
 ##teamcity[testStarted name='test_as_admin_and_succeed_with_theme_and_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/ThemeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_admin_and_succeed_with_theme_and_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_admin_and_succeed_with_theme_and_redirect' duration='28' flowId='1']
+##teamcity[testFinished name='test_as_admin_and_succeed_with_theme_and_redirect' duration='31' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest' flowId='1']
 
@@ -437,7 +437,7 @@
 
 ##teamcity[testStarted name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' duration='21' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware' duration='22' flowId='1']
 
 ##teamcity[testStarted name='test_as_guest_and_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_guest_and_redirect' flowId='1']
 
@@ -453,15 +453,15 @@
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='34' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='33' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_fail_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all' duration='34' flowId='1']
+##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all' duration='32' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='30' flowId='1']
+##teamcity[testFinished name='test_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='31' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserDashboardRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_json_as_admin_and_succeed' flowId='1']
 
@@ -477,7 +477,7 @@
 
 ##teamcity[testStarted name='test_route_json_home_as_guest_and_fail' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_json_home_as_guest_and_fail' flowId='1']
 
-##teamcity[testFinished name='test_route_json_home_as_guest_and_fail' duration='21' flowId='1']
+##teamcity[testFinished name='test_route_json_home_as_guest_and_fail' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_route_home_as_user_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserHomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed' flowId='1']
 
@@ -493,11 +493,11 @@
 
 ##teamcity[testStarted name='test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='23' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' duration='21' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_all' duration='20' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest' flowId='1']
 
@@ -509,23 +509,23 @@
 
 ##teamcity[testStarted name='test_route_sitemap_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_user_and_succeed' duration='37' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_user_and_succeed' duration='34' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_support_and_fail_when_disabled_for_all' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_support_and_fail_when_disabled_for_all' duration='28' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_support_and_fail_when_disabled_for_all' duration='27' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='29' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect' duration='28' flowId='1']
 
 ##teamcity[testStarted name='test_route_json_sitemap_as_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_route_json_sitemap_as_admin_and_succeed' duration='34' flowId='1']
+##teamcity[testFinished name='test_route_json_sitemap_as_admin_and_succeed' duration='36' flowId='1']
 
 ##teamcity[testStarted name='test_route_sitemap_as_user_and_succeed_with_package_sitemaps' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/UserSitemapRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps' flowId='1']
 
-##teamcity[testFinished name='test_route_sitemap_as_user_and_succeed_with_package_sitemaps' duration='35' flowId='1']
+##teamcity[testFinished name='test_route_sitemap_as_user_and_succeed_with_package_sitemaps' duration='34' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest' flowId='1']
 
@@ -533,15 +533,15 @@
 
 ##teamcity[testStarted name='test_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_guest_and_succeed' duration='27' flowId='1']
+##teamcity[testFinished name='test_as_guest_and_succeed' duration='26' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_guest_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_guest_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_json_as_guest_and_succeed' duration='22' flowId='1']
+##teamcity[testFinished name='test_json_as_guest_and_succeed' duration='21' flowId='1']
 
 ##teamcity[testStarted name='test_as_user_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_user_and_succeed' flowId='1']
 
-##teamcity[testFinished name='test_as_user_and_succeed' duration='29' flowId='1']
+##teamcity[testFinished name='test_as_user_and_succeed' duration='27' flowId='1']
 
 ##teamcity[testStarted name='test_json_as_manager_admin_and_succeed' locationHint='php_qn:///app/tests/Feature/Http/Controllers/Playground/WelcomeRouteTest.php::\Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_manager_admin_and_succeed' flowId='1']
 
