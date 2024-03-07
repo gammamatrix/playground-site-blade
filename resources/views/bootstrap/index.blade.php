@@ -1,4 +1,6 @@
-@extends($package_config_site_blade['layout'])
+@extends($package_config_site_blade['layout'],  [
+    'withEditor' => true,
+])
 @section('title', __('Bootstrap Components'))
 @section('breadcrumbs')
     <nav aria-label="breadcrumb" class="m-3">

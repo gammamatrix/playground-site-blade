@@ -17,7 +17,7 @@
     </nav>
 @endsection
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <h1>{{ __('Sitemap') }}</h1>
         <div class="row justify-content-center">
 
