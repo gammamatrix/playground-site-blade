@@ -4,16 +4,17 @@
 [![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-site-blade/testing/develop/coverage.svg)](tests)
 [![PHPStan Level 9 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 
-The Playground Site Blade package for [Laravel](https://laravel.com/docs/10.x) applications.
+The Playground Site Blade package for [Laravel](https://laravel.com/docs/11.x) applications.
 
-This package provides Controllers and Blade UI handling:
+This package provides a standard website with:
 - Bootstrap Theme Handling
 - Dashboard
 - Home and Index
 - Sitemap
 - Welcome
+- CMS integration
 
-More information is available [on the Playground Site Blade wiki.](https://github.com/gammamatrix/playground-site-blade/wiki)
+Read more on using Playground Login Blade [at the Read the Docs for Playground.](https://gammamatrix-playground.readthedocs.io/)
 
 ## Installation
 
