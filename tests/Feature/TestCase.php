@@ -20,6 +20,8 @@ class TestCase extends OrchestraTestCase
     use InteractsWithViews;
     use TestTrait;
 
+    protected bool $load_migrations_cms = false;
+
     protected bool $load_migrations_laravel = false;
 
     protected bool $load_migrations_playground = false;
@@ -34,6 +36,9 @@ class TestCase extends OrchestraTestCase
         Carbon::setTestNow(Carbon::now());
 
         if (! empty(env('TEST_DB_MIGRATIONS'))) {
+            if ($this->load_migrations_cms) {
+                $this->loadMigrationsFrom(dirname(dirname(__DIR__)).'/database/migrations-cms-uuid');
+            }
             if ($this->load_migrations_laravel) {
                 $this->loadMigrationsFrom(dirname(dirname(__DIR__)).'/database/migrations-laravel');
             }

@@ -23,6 +23,8 @@ class SitemapController extends Controller
 
     protected bool $enableUser = true;
 
+    protected string $snippet_slug = 'playground-site-blade::sitemap';
+
     protected string $viewBase;
 
     /**
@@ -74,6 +76,11 @@ class SitemapController extends Controller
         //     '$this->sitemaps' => $this->sitemaps,
         // ]);
 
+        /**
+         * @var array<int, array<string, mixed>>
+         */
+        $snippets = $this->snippetsForRoute($request);
+
         return view($this->getPackageViewPathFromConfig(
             $this->package_config_site_blade,
             'sitemap',
@@ -82,7 +89,7 @@ class SitemapController extends Controller
             'package_config_site_blade' => $this->package_config_site_blade,
             'configs' => $this->configs,
             'sitemaps' => $this->sitemaps,
-            // 'snippets' => $this->snippetsForRoute($request),
+            'snippets' => $snippets,
         ]);
     }
 

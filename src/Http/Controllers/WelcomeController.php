@@ -16,6 +16,8 @@ use Illuminate\View\View;
  */
 class WelcomeController extends Controller
 {
+    protected string $snippet_slug = 'playground-site-blade::welcome';
+
     /**
      * Display the welcome view.
      *
@@ -25,8 +27,15 @@ class WelcomeController extends Controller
     {
         $this->init($request);
 
+        /**
+         * @var array<int, array<string, mixed>>
+         */
+        $snippets = $this->snippetsForRoute($request);
+
         if ($request->expectsJson()) {
             $payload = $this->response_payload($request);
+
+            $payload['snippets'] = $snippets;
 
             return response()->json($payload);
         }
@@ -37,6 +46,7 @@ class WelcomeController extends Controller
             'index'
         ), [
             'package_config_site_blade' => $this->package_config_site_blade,
+            'snippets' => $snippets,
         ]);
     }
 }
