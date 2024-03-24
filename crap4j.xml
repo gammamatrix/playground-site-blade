@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-03-14 05:38:32</timestamp>
+  <timestamp>2024-03-24 22:53:21</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>20</methodCount>
-    <crapMethodCount>0</crapMethodCount>
-    <crapLoad>0</crapLoad>
-    <totalCrap>106.29</totalCrap>
-    <crapMethodPercent>0</crapMethodPercent>
+    <methodCount>28</methodCount>
+    <crapMethodCount>2</crapMethodCount>
+    <crapLoad>25</crapLoad>
+    <totalCrap>496.4</totalCrap>
+    <crapMethodPercent>7.14</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -28,9 +28,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Illuminate\Http\Request $request): Illuminate\View\View</methodSignature>
       <fullMethod>index(Illuminate\Http\Request $request): Illuminate\View\View</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>92.86</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -39,10 +39,98 @@
       <methodName>theme</methodName>
       <methodSignature>theme(Illuminate\Http\Request $request): \Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>theme(Illuminate\Http\Request $request): \Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
-      <crap>5</crap>
-      <complexity>5</complexity>
-      <coverage>100</coverage>
+      <crap>7</crap>
+      <complexity>7</complexity>
+      <coverage>95.45</coverage>
       <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippetsForRoute</methodName>
+      <methodSignature>snippetsForRoute(Illuminate\Http\Request $request, array $options): array</methodSignature>
+      <fullMethod>snippetsForRoute(Illuminate\Http\Request $request, array $options): array</fullMethod>
+      <crap>17.8</crap>
+      <complexity>5</complexity>
+      <coverage>20</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippet_slug_key</methodName>
+      <methodSignature>snippet_slug_key(string $route): string</methodSignature>
+      <fullMethod>snippet_slug_key(string $route): string</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippets_available</methodName>
+      <methodSignature>snippets_available(array $options): bool</methodSignature>
+      <fullMethod>snippets_available(array $options): bool</fullMethod>
+      <crap>244.31</crap>
+      <complexity>17</complexity>
+      <coverage>7.69</coverage>
+      <crapLoad>16</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippets_query</methodName>
+      <methodSignature>snippets_query(string $slug): Illuminate\Database\Eloquent\Builder</methodSignature>
+      <fullMethod>snippets_query(string $slug): Illuminate\Database\Eloquent\Builder</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippets_query_user</methodName>
+      <methodSignature>snippets_query_user(Illuminate\Database\Eloquent\Builder $query): void</methodSignature>
+      <fullMethod>snippets_query_user(Illuminate\Database\Eloquent\Builder $query): void</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippetsBySlugForUser</methodName>
+      <methodSignature>snippetsBySlugForUser(string $slug): array</methodSignature>
+      <fullMethod>snippetsBySlugForUser(string $slug): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippetsBySlugForGuest</methodName>
+      <methodSignature>snippetsBySlugForGuest(string $slug): array</methodSignature>
+      <fullMethod>snippetsBySlugForGuest(string $slug): array</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsSnippets</className>
+      <methodName>snippetsBySlug</methodName>
+      <methodSignature>snippetsBySlug(string $slug, Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>snippetsBySlug(string $slug, Illuminate\Http\Request $request): array</fullMethod>
+      <crap>90</crap>
+      <complexity>9</complexity>
+      <coverage>0</coverage>
+      <crapLoad>9</crapLoad>
     </method>
     <method>
       <package>Playground\Site\Blade\Http\Controllers</package>
