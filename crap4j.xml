@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-03-24 22:53:21</timestamp>
+  <timestamp>2024-03-25 04:36:19</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>28</methodCount>
-    <crapMethodCount>2</crapMethodCount>
-    <crapLoad>25</crapLoad>
-    <totalCrap>496.4</totalCrap>
-    <crapMethodPercent>7.14</crapMethodPercent>
+    <methodCount>34</methodCount>
+    <crapMethodCount>4</crapMethodCount>
+    <crapLoad>49</crapLoad>
+    <totalCrap>853.4</totalCrap>
+    <crapMethodPercent>11.76</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -42,6 +42,61 @@
       <crap>7</crap>
       <complexity>7</complexity>
       <coverage>95.45</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsPages</className>
+      <methodName>pageBySlug</methodName>
+      <methodSignature>pageBySlug(Illuminate\Http\Request $request, string $slug): ?Playground\Cms\Models\Page</methodSignature>
+      <fullMethod>pageBySlug(Illuminate\Http\Request $request, string $slug): ?Playground\Cms\Models\Page</fullMethod>
+      <crap>56</crap>
+      <complexity>7</complexity>
+      <coverage>0</coverage>
+      <crapLoad>7</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsPages</className>
+      <methodName>page_available</methodName>
+      <methodSignature>page_available(): bool</methodSignature>
+      <fullMethod>page_available(): bool</fullMethod>
+      <crap>272</crap>
+      <complexity>16</complexity>
+      <coverage>0</coverage>
+      <crapLoad>16</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsPages</className>
+      <methodName>page_query_user</methodName>
+      <methodSignature>page_query_user(Illuminate\Database\Eloquent\Builder $query): void</methodSignature>
+      <fullMethod>page_query_user(Illuminate\Database\Eloquent\Builder $query): void</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsPages</className>
+      <methodName>pageBySlugForUser</methodName>
+      <methodSignature>pageBySlugForUser(string $slug): ?Playground\Cms\Models\Page</methodSignature>
+      <fullMethod>pageBySlugForUser(string $slug): ?Playground\Cms\Models\Page</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\ConcernsPages</className>
+      <methodName>pageBySlugForGuest</methodName>
+      <methodSignature>pageBySlugForGuest(string $slug): ?Playground\Cms\Models\Page</methodSignature>
+      <fullMethod>pageBySlugForGuest(string $slug): ?Playground\Cms\Models\Page</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -211,6 +266,17 @@
     </method>
     <method>
       <package>Playground\Site\Blade\Http\Controllers</package>
+      <className>Playground\Site\Blade\Http\Controllers\PageController</className>
+      <methodName>page</methodName>
+      <methodSignature>page(Illuminate\Http\Request $request, string $slug): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>page(Illuminate\Http\Request $request, string $slug): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Site\Blade\Http\Controllers</package>
       <className>Playground\Site\Blade\Http\Controllers\SitemapController</className>
       <methodName>index</methodName>
       <methodSignature>index(Illuminate\Http\Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\View\View</methodSignature>
@@ -303,8 +369,8 @@
       <methodName>routes</methodName>
       <methodSignature>routes(array $routes): void</methodSignature>
       <fullMethod>routes(array $routes): void</fullMethod>
-      <crap>9</crap>
-      <complexity>9</complexity>
+      <crap>10</crap>
+      <complexity>10</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
