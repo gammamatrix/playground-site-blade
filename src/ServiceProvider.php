@@ -135,6 +135,9 @@ class ServiceProvider extends AuthServiceProvider
         if (! empty($routes['welcome'])) {
             $this->loadRoutesFrom(dirname(__DIR__).'/routes/welcome.php');
         }
+        if (! empty($routes['page'])) {
+            $this->loadRoutesFrom(dirname(__DIR__).'/routes/page.php');
+        }
     }
 
     public function version(): string

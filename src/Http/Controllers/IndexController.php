@@ -17,6 +17,8 @@ use Illuminate\View\View;
  */
 class IndexController extends Controller
 {
+    protected string $snippet_slug = 'playground-site-blade::index';
+
     /**
      * Display the index view
      *
@@ -26,8 +28,15 @@ class IndexController extends Controller
     {
         $this->init($request);
 
+        /**
+         * @var array<int, array<string, mixed>>
+         */
+        $snippets = $this->snippetsForRoute($request);
+
         if ($request->expectsJson()) {
             $payload = $this->response_payload($request);
+
+            $payload['snippets'] = $snippets;
 
             return response()->json($payload);
         }
@@ -38,6 +47,7 @@ class IndexController extends Controller
             'index'
         ), [
             'package_config_site_blade' => $this->package_config_site_blade,
+            'snippets' => $snippets,
         ]);
     }
 }

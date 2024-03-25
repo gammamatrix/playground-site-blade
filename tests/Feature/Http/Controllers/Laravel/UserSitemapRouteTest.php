@@ -15,6 +15,8 @@ class UserSitemapRouteTest extends TestCase
 {
     use TestTrait;
 
+    protected bool $load_migrations_cms = true;
+
     protected bool $load_migrations_laravel = true;
 
     /**

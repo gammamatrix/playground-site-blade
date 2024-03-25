@@ -15,6 +15,8 @@ class UserHomeRouteTest extends TestCase
 {
     use TestTrait;
 
+    protected bool $load_migrations_cms = true;
+
     protected bool $load_migrations_playground = true;
 
     public function test_route_home_as_guest_and_fail(): void

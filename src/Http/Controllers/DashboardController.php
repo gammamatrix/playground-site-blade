@@ -22,6 +22,8 @@ class DashboardController extends Controller
 
     protected bool $enableUser = true;
 
+    protected string $snippet_slug = 'playground-site-blade::dashboard';
+
     protected string $viewBase;
 
     /**
@@ -49,14 +51,22 @@ class DashboardController extends Controller
             return redirect('/');
         }
 
+        /**
+         * @var array<int, array<string, mixed>>
+         */
+        $snippets = $this->snippetsForRoute($request);
+
         if ($request->expectsJson()) {
             $payload = $this->response_payload($request);
+
+            $payload['snippets'] = $snippets;
 
             return response()->json($payload);
         }
 
         return view($this->viewBase, [
             'package_config_site_blade' => $this->package_config_site_blade,
+            'snippets' => $snippets,
         ]);
     }
 

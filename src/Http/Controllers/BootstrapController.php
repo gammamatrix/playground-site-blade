@@ -16,6 +16,8 @@ use Playground\Blade\Facades\Ui;
  */
 class BootstrapController extends Controller
 {
+    protected string $snippet_slug = 'playground-site-blade::bootstrap';
+
     /**
      * Display the Bootstrap theme view for UI component development previews.
      *
@@ -25,11 +27,19 @@ class BootstrapController extends Controller
     {
         $this->init($request);
 
+        $wildcard = true;
+        if ($request->has('wildcard') && ! $request->input('wildcard')) {
+            $wildcard = false;
+        }
+
         return view($this->getPackageViewPathFromConfig(
             $this->package_config_site_blade,
             'bootstrap',
             'index'
         ), [
+            'snippets' => $this->snippetsForRoute($request, [
+                'wildcard' => $wildcard,
+            ]),
             'package_config_site_blade' => $this->package_config_site_blade,
         ]);
     }
@@ -48,6 +58,11 @@ class BootstrapController extends Controller
 
         $save = ! $request->has('preview');
 
+        $wildcard = true;
+        if ($request->has('wildcard') && ! $request->input('wildcard')) {
+            $wildcard = false;
+        }
+
         $_return_url = $request->input('_return_url');
 
         Ui::setTheme($appTheme, $save);
@@ -58,6 +73,9 @@ class BootstrapController extends Controller
                 'bootstrap',
                 'theme'
             ), [
+                'snippets' => $this->snippetsForRoute($request, [
+                    'wildcard' => $wildcard,
+                ]),
                 'package_config_site_blade' => $this->package_config_site_blade,
             ]);
         }

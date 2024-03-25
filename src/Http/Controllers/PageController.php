@@ -11,22 +11,31 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Playground\Cms\Models\Page;
 
 /**
- * \Playground\Site\Blade\Http\Controllers\HomeController
+ * \Playground\Site\Blade\Http\Controllers\PageController
  */
-class HomeController extends Controller
+class PageController extends Controller
 {
-    protected string $snippet_slug = 'playground-site-blade::home';
+    use ConcernsPages;
+
+    protected string $snippet_slug = 'playground-site-blade::page';
 
     /**
-     * Display the home view.
+     * Display a page from the CMS.
      *
-     * @route GET /home home
+     * @route GET /{slug} page
      */
-    public function index(Request $request): JsonResponse|RedirectResponse|View
+    public function page(Request $request, string $slug): JsonResponse|RedirectResponse|View
     {
         $this->init($request);
+
+        $page = $this->pageBySlug($request, $slug);
+
+        if (empty($page)) {
+            abort(404);
+        }
 
         /**
          * @var array<int, array<string, mixed>>
@@ -36,6 +45,7 @@ class HomeController extends Controller
         if ($request->expectsJson()) {
             $payload = $this->response_payload($request);
 
+            $payload['data'] = $page;
             $payload['snippets'] = $snippets;
 
             return response()->json($payload);
@@ -43,11 +53,12 @@ class HomeController extends Controller
 
         return view($this->getPackageViewPathFromConfig(
             $this->package_config_site_blade,
-            'home',
-            'index'
+            'page',
+            'page'
         ), [
             'package_config_site_blade' => $this->package_config_site_blade,
             'snippets' => $snippets,
+            'data' => $page,
         ]);
     }
 }
