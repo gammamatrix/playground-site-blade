@@ -18,10 +18,8 @@ use Illuminate\Support\Carbon;
  */
 abstract class Controller extends BaseController
 {
-    use AuthorizesRequests;
     // use DispatchesJobs;
-    use ConcernsPages;
-
+    use AuthorizesRequests;
     use ConcernsSnippets;
     use ValidatesRequests;
 

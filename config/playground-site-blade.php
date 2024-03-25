@@ -14,6 +14,7 @@ return [
         'default' => env('PLAYGROUND_SITE_BLADE_MIDDLEWARE_DEFAULT', 'web'),
         'dashboard' => env('PLAYGROUND_SITE_BLADE_MIDDLEWARE_DASHBOARD', ['web', 'auth']),
         'home' => env('PLAYGROUND_SITE_BLADE_MIDDLEWARE_HOME', ['web', 'auth']),
+        'page' => env('PLAYGROUND_SITE_BLADE_MIDDLEWARE_PAGE', 'web'),
         'sitemap' => env('PLAYGROUND_SITE_BLADE_MIDDLEWARE_SITEMAP', 'web'),
         'welcome' => env('PLAYGROUND_SITE_BLADE_MIDDLEWARE_WELCOME', 'web'),
     ],
@@ -24,6 +25,7 @@ return [
         'dashboard' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_DASHBOARD', true),
         'home' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_HOME', true),
         'index' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_INDEX', true),
+        'page' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_PAGE', true),
         'sitemap' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_SITEMAP', true),
         'theme' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_THEME', true),
         'welcome' => (bool) env('PLAYGROUND_SITE_BLADE_ROUTES_WELCOME', true),
@@ -130,8 +132,6 @@ return [
     |
     | A custom view may be defined in PLAYGROUND_SITE_BLADE_SITEMAP_VIEW.
     | - An empty value will disabled the sitemap.
-    |
-    |
     |
     */
 
