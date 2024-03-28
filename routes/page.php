@@ -18,5 +18,5 @@ Route::group([
     Route::get('/{slug}', [
         'as' => 'page',
         'uses' => 'PageController@page',
-    ])->where('slug', '^([0-9A-Za-z\-\/]+)');
+    ])->where('slug', '^([0-9A-Za-z\-\/]+)')->fallback();
 });

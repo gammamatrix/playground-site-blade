@@ -6,10 +6,10 @@
         "gammamatrix",
         "laravel",
         "playground",
-        "playground-auth",
+        "cms",
         "playground-blade"
     ],
-    "homepage": "https://gammamatrix-playground.readthedocs.io/",
+    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/components/site.html",
     "license": "MIT",
     "authors": [
         {

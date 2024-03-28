@@ -14,7 +14,7 @@ This package provides a standard website with:
 - Welcome
 - CMS integration
 
-Read more on using Playground Site Blade [at the Read the Docs for Playground.](https://gammamatrix-playground.readthedocs.io/)
+Read more on using [Playground Site Blade at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/site.html)
 
 ## Installation
 
