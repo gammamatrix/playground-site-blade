@@ -13,11 +13,9 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class PublicDashboardRouteTest extends TestCase
 {
-    use TestTrait;
-
-    protected bool $load_migrations_cms = true;
-
     protected bool $load_migrations_playground = true;
+
+    protected bool $setUpUserForPlayground = true;
 
     /**
      * Set up the environment.

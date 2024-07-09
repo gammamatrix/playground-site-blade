@@ -5,7 +5,7 @@
 declare(strict_types=1);
 namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground;
 
-use Playground\Test\Models\AppPlaygroundUser as User;
+use Playground\Models\User;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**
@@ -13,11 +13,9 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class UserHomeRouteTest extends TestCase
 {
-    use TestTrait;
-
-    protected bool $load_migrations_cms = true;
-
     protected bool $load_migrations_playground = true;
+
+    protected bool $setUpUserForPlayground = true;
 
     public function test_route_home_as_guest_and_fail(): void
     {

@@ -13,11 +13,9 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class UserSitemapRouteTest extends TestCase
 {
-    use TestTrait;
-
-    protected bool $load_migrations_cms = true;
-
     protected bool $load_migrations_laravel = true;
+
+    protected bool $setUpUserForLaravel = true;
 
     /**
      * Set up the environment.

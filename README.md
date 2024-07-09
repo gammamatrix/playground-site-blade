@@ -51,6 +51,36 @@ you may override the options via system environment variables.
 
 Information on [environment variables is available on the wiki for this package](https://github.com/gammamatrix/playground-site-blade/wiki/Environment-Variables)
 
+
+## Cloc
+
+```sh
+composer cloc
+```
+
+```
+➜  playground-site-blade git:(develop) ✗ composer cloc
+> cloc --exclude-dir=output,vendor .
+      92 text files.
+      71 unique files.
+      23 files ignored.
+
+github.com/AlDanial/cloc v 1.98  T=0.12 s (604.9 files/s, 45491.7 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+PHP                             46            513            729           2369
+Blade                           16            125             14            880
+YAML                             1              5              0            275
+XML                              3              0              2            217
+Markdown                         3             42              0             87
+JSON                             1              0              0             67
+INI                              1              3              0             12
+-------------------------------------------------------------------------------
+SUM:                            71            688            745           3907
+-------------------------------------------------------------------------------
+```
+
 ## PHPStan
 
 Tests at level 9 on:

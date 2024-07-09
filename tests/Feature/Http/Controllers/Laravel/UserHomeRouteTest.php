@@ -13,11 +13,9 @@ use Tests\Feature\Playground\Site\Blade\TestCase;
  */
 class UserHomeRouteTest extends TestCase
 {
-    use TestTrait;
-
-    protected bool $load_migrations_cms = true;
-
     protected bool $load_migrations_laravel = true;
+
+    protected bool $setUpUserForLaravel = true;
 
     public function test_route_home_as_guest_and_fail(): void
     {

@@ -131,6 +131,9 @@ trait ConcernsSnippets
         return $this->snippets_available;
     }
 
+    /**
+     * @return Builder<Snippet>
+     */
     protected function snippets_query(string $slug): Builder
     {
         if (empty($this->snippets_wildcard)) {
@@ -144,6 +147,9 @@ trait ConcernsSnippets
         });
     }
 
+    /**
+     * @param Builder<Snippet> $query
+     */
     protected function snippets_query_user(Builder $query): void
     {
         if (! empty(config('playground-site-blade.cms.snippets_user'))) {

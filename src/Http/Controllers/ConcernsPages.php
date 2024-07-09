@@ -128,6 +128,9 @@ trait ConcernsPages
         return $this->page_available;
     }
 
+    /**
+     * @param Builder<Page> $query
+     */
     protected function page_query_user(Builder $query): void
     {
         if (! empty(config('playground-site-blade.cms.pages_user'))) {
