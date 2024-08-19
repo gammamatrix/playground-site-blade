@@ -262,6 +262,6 @@ trait ConcernsSnippets
         //     '$snippets' => $snippets,
         // ]);
 
-        return $snippets;
+        return is_array($snippets) ? $snippets : [];
     }
 }

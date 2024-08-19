@@ -66,7 +66,7 @@ trait ConcernsPages
             }
         }
 
-        return $page;
+        return $page instanceof Page ? $page : null;
     }
 
     protected function page_available(): bool
