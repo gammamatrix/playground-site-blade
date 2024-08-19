@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.54484304932735" branch-rate="0" lines-covered="243" lines-valid="446" branches-covered="0" branches-valid="0" complexity="178" version="0.4" timestamp="1724105636">
+<coverage line-rate="0.54484304932735" branch-rate="0" lines-covered="243" lines-valid="446" branches-covered="0" branches-valid="0" complexity="180" version="0.4" timestamp="1724108933">
   <sources>
     <source>/app/src</source>
   </sources>
@@ -137,11 +137,11 @@
         </class>
       </classes>
     </package>
-    <package name="Http/Controllers/ConcernsPages.php" line-rate="0" branch-rate="0" complexity="28">
+    <package name="Http/Controllers/ConcernsPages.php" line-rate="0" branch-rate="0" complexity="29">
       <classes>
-        <class name="Playground\Site\Blade\Http\Controllers\ConcernsPages" filename="Http/Controllers/ConcernsPages.php" line-rate="0" branch-rate="0" complexity="28">
+        <class name="Playground\Site\Blade\Http\Controllers\ConcernsPages" filename="Http/Controllers/ConcernsPages.php" line-rate="0" branch-rate="0" complexity="29">
           <methods>
-            <method name="pageBySlug" signature="Illuminate\Http\Request $request, string $slug" line-rate="0" branch-rate="0" complexity="7">
+            <method name="pageBySlug" signature="Illuminate\Http\Request $request, string $slug" line-rate="0" branch-rate="0" complexity="8">
               <lines>
                 <line number="35" hits="0"/>
                 <line number="36" hits="0"/>
@@ -309,9 +309,9 @@
         </class>
       </classes>
     </package>
-    <package name="Http/Controllers/ConcernsSnippets.php" line-rate="0.042553191489362" branch-rate="0" complexity="41">
+    <package name="Http/Controllers/ConcernsSnippets.php" line-rate="0.042553191489362" branch-rate="0" complexity="42">
       <classes>
-        <class name="Playground\Site\Blade\Http\Controllers\ConcernsSnippets" filename="Http/Controllers/ConcernsSnippets.php" line-rate="0.042553191489362" branch-rate="0" complexity="41">
+        <class name="Playground\Site\Blade\Http\Controllers\ConcernsSnippets" filename="Http/Controllers/ConcernsSnippets.php" line-rate="0.042553191489362" branch-rate="0" complexity="42">
           <methods>
             <method name="snippetsForRoute" signature="Illuminate\Http\Request $request, array $options" line-rate="0.2" branch-rate="0" complexity="5">
               <lines>
@@ -407,7 +407,7 @@
                 <line number="209" hits="0"/>
               </lines>
             </method>
-            <method name="snippetsBySlug" signature="string $slug, Illuminate\Http\Request $request" line-rate="0" branch-rate="0" complexity="9">
+            <method name="snippetsBySlug" signature="string $slug, Illuminate\Http\Request $request" line-rate="0" branch-rate="0" complexity="10">
               <lines>
                 <line number="220" hits="0"/>
                 <line number="223" hits="0"/>

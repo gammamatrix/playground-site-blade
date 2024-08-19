@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-08-19 22:13:56</timestamp>
+  <timestamp>2024-08-19 23:08:53</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>34</methodCount>
     <crapMethodCount>4</crapMethodCount>
-    <crapLoad>49</crapLoad>
-    <totalCrap>853.4</totalCrap>
+    <crapLoad>51</crapLoad>
+    <totalCrap>889.4</totalCrap>
     <crapMethodPercent>11.76</crapMethodPercent>
   </stats>
   <methods>
@@ -50,10 +50,10 @@
       <methodName>pageBySlug</methodName>
       <methodSignature>pageBySlug(Illuminate\Http\Request $request, string $slug): ?Playground\Cms\Models\Page</methodSignature>
       <fullMethod>pageBySlug(Illuminate\Http\Request $request, string $slug): ?Playground\Cms\Models\Page</fullMethod>
-      <crap>56</crap>
-      <complexity>7</complexity>
+      <crap>72</crap>
+      <complexity>8</complexity>
       <coverage>0</coverage>
-      <crapLoad>7</crapLoad>
+      <crapLoad>8</crapLoad>
     </method>
     <method>
       <package>Playground\Site\Blade\Http\Controllers</package>
@@ -182,10 +182,10 @@
       <methodName>snippetsBySlug</methodName>
       <methodSignature>snippetsBySlug(string $slug, Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>snippetsBySlug(string $slug, Illuminate\Http\Request $request): array</fullMethod>
-      <crap>90</crap>
-      <complexity>9</complexity>
+      <crap>110</crap>
+      <complexity>10</complexity>
       <coverage>0</coverage>
-      <crapLoad>9</crapLoad>
+      <crapLoad>10</crapLoad>
     </method>
     <method>
       <package>Playground\Site\Blade\Http\Controllers</package>
