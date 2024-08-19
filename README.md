@@ -51,6 +51,104 @@ you may override the options via system environment variables.
 
 Information on [environment variables is available on the wiki for this package](https://github.com/gammamatrix/playground-site-blade/wiki/Environment-Variables)
 
+## UI
+
+<section>
+
+<details open>
+
+<summary>Toggle UI screenshots</summary>
+
+### Sitemap
+
+<img src="resources/docs/playground-site-blade-sitemap.png" alt="screenshot of a sitemap loaded in a mobile view with dark mode.">
+
+- Sitemap loaded in a mobile view with dark mode
+
+#### Authorization checks in Sitemaps
+
+All sitemaps are expected to perform `Route::has($route)` checks and verify the user has access against the ACLs.
+
+For example, this is in the CMS sitemap blade:
+
+```php
+<?php
+$user = \Illuminate\Support\Facades\Auth::user();
+
+$viewPages = \Playground\Auth\Facades\Can::access($user, [
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-cms-resource:page:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
+])->allowed();
+
+$viewSnippets = \Playground\Auth\Facades\Can::access($user, [
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-cms-resource:snippet:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
+])->allowed();
+
+
+if (!$viewPages && !$viewSnippets) {
+    return;
+}
+?>
+```
+- Where applicable, policies are used on the routes. `\Playground\Auth\Facades\Can::access()` checks against the enabled authorization options.
+
+#### playground-admin-resource
+
+<img src="resources/docs/playground-site-blade-sitemap-admin.png" alt="screenshot of a sitemap loaded from playground-admin-resource.">
+
+- See [gammamatrix/playground-admin-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-admin-resource/blob/develop/resources/views/sitemap.blade.php)
+
+#### playground-cms-resource
+
+<img src="resources/docs/playground-site-blade-sitemap-cms.png" alt="screenshot of a sitemap loaded from playground-cms-resource.">
+
+- See [gammamatrix/playground-cms-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-cms-resource/blob/develop/resources/views/sitemap.blade.php)
+
+#### playground-directory-resource
+
+<img src="resources/docs/playground-site-blade-sitemap-directory.png" alt="screenshot of a sitemap loaded from playground-directory-resource.">
+
+- See [gammamatrix/playground-directory-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-directory-resource/blob/develop/resources/views/sitemap.blade.php)
+
+#### playground-lead-resource
+
+<img src="resources/docs/playground-site-blade-sitemap-lead.png" alt="screenshot of a sitemap loaded from playground-lead-resource.">
+
+- See [gammamatrix/playground-lead-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-lead-resource/blob/develop/resources/views/sitemap.blade.php)
+
+#### playground-login-blade
+
+<img src="resources/docs/playground-site-blade-sitemap-login.png" alt="screenshot of a sitemap loaded from playground-login-blade.">
+
+- See [gammamatrix/playground-login-blade/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-login-blade/blob/develop/resources/views/sitemap.blade.php)
+
+#### playground-matrix-resource
+
+<img src="resources/docs/playground-site-blade-sitemap-matrix.png" alt="screenshot of a sitemap loaded from playground-matrix-resource.">
+
+- See [gammamatrix/playground-matrix-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-matrix-resource/blob/develop/resources/views/sitemap.blade.php)
+
+#### playground-site-blade
+
+<img src="resources/docs/playground-site-blade-sitemap-site.png" alt="screenshot of a sitemap loaded from playground-site-blade.">
+
+- See [gammamatrix/playground-site-blade/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-site-blade/blob/develop/resources/views/sitemap.blade.php)
+
+### Theme
+
+This application supports themes, with Bootstrap 5 using CSS Variables.
+
+<img src="resources/docs/playground-site-blade-theme-select.png" alt="screenshot of the lead sitemap loaded while displaying the selection for Dark Theme.">
+
+</details>
+
+</section>
+
 
 ## Cloc
 
