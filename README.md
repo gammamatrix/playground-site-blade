@@ -109,6 +109,12 @@ if (!$viewPages && !$viewSnippets) {
 
 - See [gammamatrix/playground-cms-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-cms-resource/blob/develop/resources/views/sitemap.blade.php)
 
+#### playground-crm-resource
+
+<img src="resources/docs/playground-site-blade-sitemap-crm.png" alt="screenshot of a sitemap loaded from playground-crm-resource.">
+
+- See [gammamatrix/playground-cms-resource/resources/views/sitemap.blade.php](https://github.com/gammamatrix/playground-cms-resource/blob/develop/resources/views/sitemap.blade.php)
+
 #### playground-directory-resource
 
 <img src="resources/docs/playground-site-blade-sitemap-directory.png" alt="screenshot of a sitemap loaded from playground-directory-resource.">
