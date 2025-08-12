@@ -4,6 +4,7 @@ declare(strict_types=1);
 /**
  * Playground
  */
+
 namespace Playground\Site\Blade\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -129,7 +130,7 @@ trait ConcernsPages
     }
 
     /**
-     * @param Builder<Page> $query
+     * @param  Builder<Page>  $query
      */
     protected function page_query_user(Builder $query): void
     {

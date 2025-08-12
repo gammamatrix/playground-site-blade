@@ -19,13 +19,13 @@
         }
     ],
     "require": {
-        "php": "^8.2",
-        "gammamatrix/playground-blade": "*",
-        "gammamatrix/playground-cms": "*"
+        "php": "^8.4",
+        "gammamatrix/playground-blade": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0",
+        "gammamatrix/playground-cms": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0"
     },
     "require-dev": {
-        "gammamatrix/playground-login-blade": "*",
-        "gammamatrix/playground-test": "*"
+        "gammamatrix/playground-login-blade": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0",
+        "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -36,8 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Feature\\Playground\\Site\\Blade\\": "tests/Feature/",
-            "Tests\\Unit\\Playground\\Site\\Blade\\": "tests/Unit/"
+            "Tests\\Feature\\Playground\\Site\\Blade\\": "tests/Feature/"
         }
     },
     "config": {
@@ -49,8 +48,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "73.x-dev",
-            "dev-master": "73.x-dev"
+            "dev-develop": "74.x-dev"
         },
         "laravel": {
             "providers": [
@@ -61,7 +59,7 @@
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
         "cloc": "cloc --exclude-dir=output,vendor .",
-        "format": "vendor/bin/php-cs-fixer fix",
+        "format": "vendor/bin/pint",
         "test": "vendor/bin/phpunit"
     }
 }

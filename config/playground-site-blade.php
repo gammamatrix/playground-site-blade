@@ -1,13 +1,99 @@
 <?php
 
+/**
+ * Playground
+ */
+
 declare(strict_types=1);
 
+/**
+ * Playground: Blade Site Configuration and Environment Variables
+ *
+ * @return array{
+ *     about: bool,
+ *     layout: string,
+ *     load: array{
+ *         routes: bool,
+ *         views: bool
+ *     },
+ *     middleware: array{
+ *         default: string|string[],
+ *         dashboard: string|string[],
+ *         home: string|string[],
+ *         page: string|string[],
+ *         sitemap: string|string[],
+ *         welcome: string|string[]
+ *     },
+ *     routes: array{
+ *         about: bool,
+ *         bootstrap: bool,
+ *         dashboard: bool,
+ *         home: bool,
+ *         index: bool,
+ *         page: bool,
+ *         sitemap: bool,
+ *         theme: bool,
+ *         welcome: bool
+ *     },
+ *     view: string,
+ *     cache: array{
+ *         enable: bool,
+ *         page: bool,
+ *         page_store: string,
+ *         page_ttl: int,
+ *         snippet: bool,
+ *         snippet_store: string,
+ *         snippet_ttl: int
+ *     },
+ *     cms: array{
+ *         enable: bool,
+ *         page: class-string<\Illuminate\Database\Eloquent\Model>,
+ *         page_store: string,
+ *         page_ttl: int,
+ *         snippet: class-string<\Illuminate\Database\Eloquent\Model>,
+ *         snippet_store: string,
+ *         snippet_ttl: int
+ *     },
+ *     domain: array{
+ *          enable: bool,
+ *          key: string,
+ *          default: string
+ *     },
+ *     dashboard: array{
+ *          enable: bool,
+ *          guest: bool,
+ *          user: bool,
+ *          view: string
+ *     },
+ *     sitemap: array{
+ *          enable: bool,
+ *          guest: bool,
+ *          user: bool,
+ *          view: string
+ *     }
+ * }
+ */
+
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | About Information
+    |--------------------------------------------------------------------------
+    |
+    | By default, information will be displayed about this package when using:
+    |
+    | `artisan about`
+    |
+    */
+
+    'about' => (bool) env('PLAYGROUND_SITE_BLADE_ABOUT', true),
+
     'layout' => env('PLAYGROUND_SITE_BLADE_LAYOUT', env('PLAYGROUND_BLADE_LAYOUT', 'playground::layouts.site')),
 
     'load' => [
-        'views' => (bool) env('PLAYGROUND_SITE_BLADE_LOAD_VIEWS', true),
         'routes' => (bool) env('PLAYGROUND_SITE_BLADE_LOAD_ROUTES', true),
+        'views' => (bool) env('PLAYGROUND_SITE_BLADE_LOAD_VIEWS', true),
     ],
 
     'middleware' => [

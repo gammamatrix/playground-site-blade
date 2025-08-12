@@ -4,6 +4,7 @@ declare(strict_types=1);
 /**
  * Playground
  */
+
 namespace Playground\Site\Blade\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
@@ -70,7 +71,7 @@ class DashboardController extends Controller
         ]);
     }
 
-    protected function init(Request $request = null): void
+    protected function init(?Request $request = null): void
     {
         parent::init($request);
 

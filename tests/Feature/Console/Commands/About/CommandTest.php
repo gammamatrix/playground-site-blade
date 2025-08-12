@@ -1,13 +1,15 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Site\Blade\Console\Commands\About;
 
 use PHPUnit\Framework\Attributes\CoversClass;
-use Playground\Test\ServiceProvider;
+use Playground\Site\Blade\ServiceProvider;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
 /**

@@ -4,6 +4,7 @@ declare(strict_types=1);
 /**
  * Playground
  */
+
 namespace Playground\Site\Blade\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;

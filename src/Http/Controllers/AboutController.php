@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Site\Blade\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;

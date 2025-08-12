@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel;
 
 use Playground\Test\Models\User;

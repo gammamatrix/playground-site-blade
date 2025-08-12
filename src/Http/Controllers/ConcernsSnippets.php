@@ -4,6 +4,7 @@ declare(strict_types=1);
 /**
  * Playground
  */
+
 namespace Playground\Site\Blade\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -35,7 +36,7 @@ trait ConcernsSnippets
     protected int $snippets_cache_ttl = 0;
 
     /**
-     * @param array<string, mixed> $options
+     * @param  array<string, mixed>  $options
      * @return array<int, array<string, mixed>>
      */
     public function snippetsForRoute(Request $request, array $options = []): array
@@ -65,7 +66,7 @@ trait ConcernsSnippets
     }
 
     /**
-     * @param array<string, mixed> $options
+     * @param  array<string, mixed>  $options
      */
     protected function snippets_available(array $options = []): bool
     {
@@ -148,7 +149,7 @@ trait ConcernsSnippets
     }
 
     /**
-     * @param Builder<Snippet> $query
+     * @param  Builder<Snippet>  $query
      */
     protected function snippets_query_user(Builder $query): void
     {
@@ -236,10 +237,16 @@ trait ConcernsSnippets
                     $this->snippet_slug_domain ? $this->snippet_slug_domain : $this->snippet_domain_default,
                     $slug
                 );
+                /**
+                 * @var array<int, array<string, mixed>> $snippets
+                 */
                 $snippets = Cache::remember($key, $this->snippets_cache_ttl, function () use ($slug) {
                     return $this->snippetsBySlugForUser($slug);
                 });
             } else {
+                /**
+                 * @var array<int, array<string, mixed>> $snippets
+                 */
                 $snippets = $this->snippetsBySlugForUser($slug);
             }
         } else {
@@ -249,10 +256,16 @@ trait ConcernsSnippets
                     $this->snippet_slug_domain ? $this->snippet_slug_domain : $this->snippet_domain_default,
                     $slug
                 );
+                /**
+                 * @var array<int, array<string, mixed>> $snippets
+                 */
                 $snippets = Cache::remember($key, $this->snippets_cache_ttl, function () use ($slug) {
                     return $this->snippetsBySlugForGuest($slug);
                 });
             } else {
+                /**
+                 * @var array<int, array<string, mixed>> $snippets
+                 */
                 $snippets = $this->snippetsBySlugForGuest($slug);
             }
         }
