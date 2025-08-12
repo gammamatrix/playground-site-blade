@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-08-20 22:13:38</timestamp>
+  <timestamp>2025-08-12 16:53:37</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>34</methodCount>
     <crapMethodCount>4</crapMethodCount>
     <crapLoad>51</crapLoad>
-    <totalCrap>889.4</totalCrap>
+    <totalCrap>896.4</totalCrap>
     <crapMethodPercent>11.76</crapMethodPercent>
   </stats>
   <methods>
@@ -213,8 +213,8 @@
       <package>Playground\Site\Blade\Http\Controllers</package>
       <className>Playground\Site\Blade\Http\Controllers\Controller</className>
       <methodName>init</methodName>
-      <methodSignature>init(Illuminate\Http\Request $request): void</methodSignature>
-      <fullMethod>init(Illuminate\Http\Request $request): void</fullMethod>
+      <methodSignature>init(?Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>init(?Illuminate\Http\Request $request): void</fullMethod>
       <crap>2</crap>
       <complexity>2</complexity>
       <coverage>100</coverage>
@@ -235,8 +235,8 @@
       <package>Playground\Site\Blade\Http\Controllers</package>
       <className>Playground\Site\Blade\Http\Controllers\DashboardController</className>
       <methodName>init</methodName>
-      <methodSignature>init(Illuminate\Http\Request $request): void</methodSignature>
-      <fullMethod>init(Illuminate\Http\Request $request): void</fullMethod>
+      <methodSignature>init(?Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>init(?Illuminate\Http\Request $request): void</fullMethod>
       <crap>5.01</crap>
       <complexity>5</complexity>
       <coverage>92.86</coverage>
@@ -290,8 +290,8 @@
       <package>Playground\Site\Blade\Http\Controllers</package>
       <className>Playground\Site\Blade\Http\Controllers\SitemapController</className>
       <methodName>init</methodName>
-      <methodSignature>init(Illuminate\Http\Request $request): void</methodSignature>
-      <fullMethod>init(Illuminate\Http\Request $request): void</fullMethod>
+      <methodSignature>init(?Illuminate\Http\Request $request): void</methodSignature>
+      <fullMethod>init(?Illuminate\Http\Request $request): void</fullMethod>
       <crap>6.14</crap>
       <complexity>5</complexity>
       <coverage>64.29</coverage>
@@ -336,8 +336,8 @@
       <methodName>boot</methodName>
       <methodSignature>boot(): void</methodSignature>
       <fullMethod>boot(): void</fullMethod>
-      <crap>7</crap>
-      <complexity>7</complexity>
+      <crap>8</crap>
+      <complexity>8</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -347,8 +347,8 @@
       <methodName>about</methodName>
       <methodSignature>about(): void</methodSignature>
       <fullMethod>about(): void</fullMethod>
-      <crap>23</crap>
-      <complexity>23</complexity>
+      <crap>29</crap>
+      <complexity>29</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
