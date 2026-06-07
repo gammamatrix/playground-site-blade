@@ -5,6 +5,9 @@
  */
 
 declare(strict_types=1);
+use Illuminate\Database\Eloquent\Model;
+use Playground\Cms\Models\Page;
+use Playground\Cms\Models\Snippet;
 
 /**
  * Playground: Blade Site Configuration and Environment Variables
@@ -47,10 +50,10 @@ declare(strict_types=1);
  *     },
  *     cms: array{
  *         enable: bool,
- *         page: class-string<\Illuminate\Database\Eloquent\Model>,
+ *         page: class-string<Model>,
  *         page_store: string,
  *         page_ttl: int,
- *         snippet: class-string<\Illuminate\Database\Eloquent\Model>,
+ *         snippet: class-string<Model>,
  *         snippet_store: string,
  *         snippet_ttl: int
  *     },
@@ -160,13 +163,13 @@ return [
         'enable' => (bool) env('PLAYGROUND_SITE_BLADE_CMS_ENABLE', false),
         // 'enable' => (bool) env('PLAYGROUND_SITE_BLADE_CMS_ENABLE', true),
 
-        'page' => env('PLAYGROUND_SITE_BLADE_CMS_PAGE', Playground\Cms\Models\Page::class),
+        'page' => env('PLAYGROUND_SITE_BLADE_CMS_PAGE', Page::class),
         'pages' => (bool) env('PLAYGROUND_SITE_BLADE_CMS_PAGES', true),
 
         'pages_user' => (bool) env('PLAYGROUND_SITE_BLADE_CMS_PAGES_USER', true),
         // 'pages_user' => false,
 
-        'snippet' => env('PLAYGROUND_SITE_BLADE_CMS_SNIPPETS', Playground\Cms\Models\Snippet::class),
+        'snippet' => env('PLAYGROUND_SITE_BLADE_CMS_SNIPPETS', Snippet::class),
         'snippets' => (bool) env('PLAYGROUND_SITE_BLADE_CMS_SNIPPETS', true),
         'snippets_user' => (bool) env('PLAYGROUND_SITE_BLADE_CMS_SNIPPETS_USER', true),
         // 'snippets_user' => false,

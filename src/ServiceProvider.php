@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace Playground\Site\Blade;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
 use Illuminate\Support\Facades\App;
@@ -62,10 +63,10 @@ class ServiceProvider extends AuthServiceProvider
          *      },
          *      cms: array{
          *          enable: bool,
-         *          page: class-string<\Illuminate\Database\Eloquent\Model>,
+         *          page: class-string<Model>,
          *          page_store: string,
          *          page_ttl: int,
-         *          snippet: class-string<\Illuminate\Database\Eloquent\Model>,
+         *          snippet: class-string<Model>,
          *          snippet_store: string,
          *          snippet_ttl: int
          *      },

@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel;
 
+use Illuminate\Foundation\Application;
 use Playground\Test\Models\User;
 use Tests\Feature\Playground\Site\Blade\TestCase;
 
@@ -22,7 +23,7 @@ class PublicHomeRouteTest extends TestCase
     /**
      * Set up the environment.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      */
     protected function getEnvironmentSetUp($app): void
     {

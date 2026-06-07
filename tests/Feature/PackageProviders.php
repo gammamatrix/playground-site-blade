@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Site\Blade;
 
+use Playground\ServiceProvider;
+
 /**
  * \Tests\Feature\Playground\Login\Blade\PackageProviders
  */
@@ -17,7 +19,7 @@ trait PackageProviders
     {
         return [
             \Playground\Test\ServiceProvider::class,
-            \Playground\ServiceProvider::class,
+            ServiceProvider::class,
             \Playground\Auth\ServiceProvider::class,
             \Playground\Blade\ServiceProvider::class,
             \Playground\Login\Blade\ServiceProvider::class,

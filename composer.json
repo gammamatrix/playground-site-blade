@@ -20,15 +20,15 @@
     ],
     "require": {
         "php": "^8.4",
-        "gammamatrix/playground-blade": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0",
-        "gammamatrix/playground-cms": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0",
-        "illuminate/view": "^12.0"
+        "gammamatrix/playground-blade": "*",
+        "gammamatrix/playground-cms": "*",
+        "illuminate/view": "^13.0"
     },
     "require-dev": {
-        "gammamatrix/playground-login-blade": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0",
-        "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^74.0@dev|^74.0",
-        "illuminate/testing": "^12.0",
-        "phpunit/phpunit": "^12.3"
+        "gammamatrix/playground-login-blade": "*",
+        "gammamatrix/playground-test": "*",
+        "illuminate/testing": "^13.0",
+        "tomasvotruba/bladestan": "dev-main"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -51,7 +51,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "74.x-dev"
+            "dev-develop": "75.x-dev"
         },
         "laravel": {
             "providers": [
@@ -63,6 +63,14 @@
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
         "cloc": "cloc --exclude-dir=output,vendor .",
         "format": "vendor/bin/pint",
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/testbench package:test",
+        "test-dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpunit -c phpunit-dev.xml"
+        ],
+        "test-parallel": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/paratest -c phpunit-dev.xml"
+        ]
     }
 }

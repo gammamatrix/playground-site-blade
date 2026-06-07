@@ -7,8 +7,9 @@ declare(strict_types=1);
 
 namespace Playground\Site\Blade\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Database\Eloquent\Model;
 // use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
@@ -103,10 +104,10 @@ abstract class Controller extends BaseController
          *      },
          *      cms: array{
          *          enable: bool,
-         *          page: class-string<\Illuminate\Database\Eloquent\Model>,
+         *          page: class-string<Model>,
          *          page_store: string,
          *          page_ttl: int,
-         *          snippet: class-string<\Illuminate\Database\Eloquent\Model>,
+         *          snippet: class-string<Model>,
          *          snippet_store: string,
          *          snippet_ttl: int
          *      },
